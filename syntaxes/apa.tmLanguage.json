@@ -1,0 +1,262 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "APA",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#functions"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#numbers"
+		}
+	],
+	"repository": {
+		"functions": {
+			"patterns": [{
+				"name": "keyword.function.apa",
+				"match": "\\b(adjustement|adjustementmask|afpfile|afpmode|afppage|afpresource|area|areabox)\\b"
+			},{
+				"name": "keyword.function.apa",
+				"match": "\\b(bannerinformation|barcode|batinformation|batquery|beginmedium|beginpage|bookmark|box|breakpoint)\\b"
+			},{
+				"name": "keyword.function.apa",
+				"match": "\\b(camera|cascade|cat|chooseimage|comp|customercode|continuoussupport)\\b"
+			},{
+				"name": "keyword.function.apa",
+				"match": "\\b(datamatrix|display|dossiertype)\\b"
+			},{
+				"name": "keyword.function.apa",
+				"match": "\\b(else|endif|endoverlay|endmedium|endpage|endpagesgroup|endusing|endwhile|eval|exit|expr)\\b"
+			},{
+				"name": "keyword.function.apa",
+				"match": "\\b(Fct_AuxCityItems|Fct_DateCapture|Fct_DesCityItems|Fct_ManualFont|Fct_NumDayOfYear|Fct_SepConcat|file|filedown|fileup|FILE_APA|FILE_BATQUERY|FILE_DAT|filecontrolsystem|FILLER|formate)\\b"
+			},{
+				"name": "keyword.function.apa",
+				"match": "\\b(gauge|generatefile|generateoutputfile|generatefileged|getpagetype|goto)\\b"
+			},{
+				"name": "keyword.function.apa",
+				"match": "\\b(if|ifcustomersample|ifcutsheet|ifcontinuous|ifinternalsample|image|imagedirectory|include|integritycode|integralitycode)\\b"
+			},{
+				"name": "keyword.function.apa",
+				"match": "\\b(jog)\\b"
+			},{
+				"name": "keyword.function.apa",
+				"match": "\\b(language|line|lineto|look|low|lrtrim|ltrim)\\b"
+			},{
+				"name": "keyword.function.apa",
+				"match": "\\b(make|makecolor|makecolorspace|makefont|makeimage|makeoverlay|makepagesgroup|messagelog|move|moveto|multifile|multileafinfo|multiread)\\b"
+			},{
+				"name": "keyword.function.apa",
+				"match": "\\b(nbocc|newpage|nop|num|numcmd|numformat|numtrim)\\b"
+			},{
+				"name": "keyword.function.apa",
+				"match": "\\b(pack|pagedef|pageorigin|paper|PATH_APA|PATH_BATQUERY|PATH_DAT|page|pagetype|pie|printcontroloff|printerduplexmode|putimage)\\b"
+			},{
+				"name": "keyword.function.apa",
+				"match": "\\b(qrcode)\\b"
+			},{
+				"name": "keyword.function.apa",
+				"match": "\\b(readresequence|rect|repcode|repredsort|reset|roundrect|rule|rtrim)\\b"
+			},{
+				"name": "keyword.function.apa",
+				"match": "\\b(samplequery|size|sizeof|sort|staple)\\b"
+			},{
+				"name": "keyword.function.apa",
+				"match": "\\b(text|textformat|then|tle|traceif|translate|tray)\\b"
+			},{
+				"name": "keyword.function.apa",
+				"match": "\\b(unit|using)\\b"
+			},{
+				"name": "keyword.function.apa",
+				"match": "\\b(warning|while)\\b"
+			}]
+		},
+
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.apa",
+				"match": "\\b(absolute|angle|at|auto)\\b"
+			},{
+				"name": "keyword.control.apa",
+				"match": "\\b(back|book)\\b"
+			},{
+				"name": "keyword.control.apa",
+				"match": "\\b(ceil|chr|cmt|codepage|color|cols|country|cm)\\b"
+			},{
+				"name": "keyword.control.apa",
+				"match": "\\b(datafilesort|def|directorypath|down)\\b"
+			},{
+				"name": "keyword.control.apa",
+				"match": "\\b(filedown|fileinfo|fileup|fix|floor|font|front|from)\\b"
+			},{
+				"name": "keyword.control.apa",
+				"match": "\\b(hgt|hq|hqkmin)\\b"
+			},{
+				"name": "keyword.control.apa",
+				"match": "\\b(inch|incmyk|ingray|init|inrgb|into|intofile|intovar])\\b"
+			},{
+				"name": "keyword.control.apa",
+				"match": "\\b(lead|left|list|lq|lqkmin)\\b"
+			},{
+				"name": "keyword.control.apa",
+				"match": "\\b(manufacturer|micr|mode_y|mode_z|mm)\\b"
+			},{
+				"name": "keyword.control.apa",
+				"match": "\\b(name|nodirbddcontrol|none|nosort)\\b"
+			},{
+				"name": "keyword.control.apa",
+				"match": "\\b(oca|occurs|off|omask|omitindex|only|onlyforview|outputstandard)\\b"
+			},{
+				"name": "keyword.control.apa",
+				"match": "\\b(part|pels|perceptual|plus|point|pointsize)\\b"
+			},{
+				"name": "keyword.control.apa",
+				"match": "\\b(quality)\\b"
+			},{
+				"name": "keyword.control.apa",
+				"match": "\\b(recto|relative|rendering|repetitive|resize|right)\\b"
+			},{
+				"name": "keyword.control.apa",
+				"match": "\\b(saturation|server|size|sq|sqkmin|stack|step)\\b"
+			},{
+				"name": "keyword.control.apa",
+				"match": "\\b(thick|type)\\b"
+			},{
+				"name": "keyword.control.apa",
+				"match": "\\b(undpos|undsize|unicode|up)\\b"
+			},{
+				"name": "keyword.control.apa",
+				"match": "\\b(varonfile|vect|verso)\\b"
+			},{
+				"name": "keyword.control.apa",
+				"match": "\\b(weight)\\b"
+			},{
+				"name": "keyword.control.apa",
+				"match": "\\b(xaddpel|xresize)\\b"
+			},{
+				"name": "keyword.control.apa",
+				"match": "\\b(yaddpel)\\b"
+			}
+			]
+		},
+
+		"constants": {
+			"patterns": [{
+				"name": "constant.language.apa",
+				"match": "\\b(AFP_PAGE_X_SIZE|AFP_PAGE_Y_SIZE)\\b"
+			},{
+				"name": "constant.language.apa",
+				"match": "\\b(CURRENT_X|CURRENT_Y|CURRENT_Y_PACK|CURSIDE)\\b"
+			},{
+				"name": "constant.language.apa",
+				"match": "\\b(DATE)\\b"
+			},{
+				"name": "constant.language.apa",
+				"match": "\\b(FILE|FIRST_TIME|FOOT)\\b"
+			},{
+				"name": "constant.language.apa",
+				"match": "\\b(HEAD)\\b"
+			},{
+				"name": "constant.language.apa",
+				"match": "\\b(INTERCLASS_MODE|IPDS_RESOLUTION)\\b"
+			},{
+				"name": "constant.language.apa",
+				"match": "\\b(LAST_X|LAST_Y|LAST_Y_PACK)\\b"
+			},{
+				"name": "constant.language.apa",
+				"match": "\\b(NBLEAF|NUMAREA|NUMCMD|NUMLEAF|NB_REC_IN_FILE|NB_REC_IN_SUBBATCH)\\b"
+			},{
+				"name": "constant.language.apa",
+				"match": "\\b(PHYSICALRECNO|PRINTER_MODEL|PRINTER_RESOLUTION_X|PRINTER_RESOLUTION_Y)\\b"
+			},{
+				"name": "constant.language.apa",
+				"match": "\\b(RECNO)\\b"
+			},{
+				"name": "constant.language.apa",
+				"match": "\\b(TALK|TIME)\\b"
+			}]
+		},
+
+		"strings": {
+			"name": "string.quoted.double.apa",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.apa",
+					"match": "\\\\."
+				}
+			]
+		},
+		
+		"numbers": {
+			"patterns": [{
+				"name": "constant.numeric.apa",
+				"match": "\\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)\\b"
+				}]
+		},
+
+		"comments":{
+			"patterns": [{
+				"captures": {
+					"1":{"name": "meta.toc-list.banner.block.apa"}
+				},
+				"name": "comment.block.apa",
+				"match": "^/\\* =(\\s*.*?)\\s*= \\*/$\\n?"
+			},
+			{
+				"begin": "/\\*",
+				"beginCaptures":{
+					"0":{"name": "punctuation.definition.comment.begin.apa"}
+				},
+				"end": "\\*/",
+				"endCaptures":{
+					"0":{"name": "punctuation.definition.comment.end.apa"}
+				},
+				"name": "comment.block.apa"
+			},
+			{
+				"match": "\\*/.*\\n",
+				"name": "invalid.illegal.stray-comment-end.apa"
+			},
+			{
+				"captures":{
+					"1":{"name": "meta.toc-list.banner.line.apa"}
+				},
+				"match": "^// =(\\s*.*?)\\s*=\\s*$\\n?",
+				"name": "comment.line.banner.apa"
+			},
+			{
+				"begin": "(^[ \\t]+)?(?=//)",
+				"beginCaptures":{
+					"1":{"name": "punctuation.whitespace.comment.leading.apa"}
+				},
+				"end": "(?!\\G)",
+				"patterns": [{
+					"begin": "//",
+					"beginCaptures":{
+						"0":{"name": "punctuation.definition.comment.apa"}
+					},
+					"end": "\\n",
+					"name": "comment.line.double-slash.apa",
+					"patterns": [{
+						"match": "(?>\\\\\\s*\\n)",
+						"name": "punctuation.separator.continuation.apa"
+					}]
+				}]
+			}]
+		}
+	},
+	"scopeName": "source.apa"
+}

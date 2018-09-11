@@ -1,0 +1,26 @@
+{
+  "makefont default":{
+    "prefix": "makefont",
+    "body": "makefont ${1:fntname} name \"${2:Tahoma}\" pointsize ${3:size} def;$4"
+  },
+  "makefont":{
+    "prefix": "makefont",
+    "body": "makefont ${1:fntname} name \"${2:Tahoma}\" pointsize ${3:size};$4"
+  },
+  "paper":{
+    "prefix": "paper",
+    "body": "paper \"${1:name}\" manufacturer \"${2:name}\" weight ${3:80};$4"
+  },
+  "file":{
+    "prefix": "file",
+    "body": "file \"${1:filepath}\" fix ${2:length};$3"
+  },
+  "box":{
+    "prefix": "box",
+    "body": "box ${1:xsize} ${2:ysize} at ${3:x} ${4:y} lead ${5:pels} ${6:down|back|up};$7"
+  },
+  "page":{
+    "prefix": "page",
+    "body": "page ${1:xsize} ${2:inch|cm|mm|pels|point} ${3:ysize} ${4:inch|cm|mm|pels|point};$5"
+  }
+}

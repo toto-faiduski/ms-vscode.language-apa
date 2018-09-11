@@ -1,0 +1,33 @@
+{
+    "name": "apa",
+    "displayName": "APA",
+    "description": "APA language",
+    "version": "0.0.1",
+    "publisher": "TagG",
+    "engines": {
+        "vscode": "^1.27.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Snippets"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "apa",
+            "aliases": ["APA", "apa"],
+            "extensions": [".apa"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "apa",
+            "scopeName": "source.apa",
+            "path": "./syntaxes/apa.tmLanguage.json"
+        }],
+        "snippets": [
+            {
+                "language": "apa",
+                "path": "./snippets/apa.json"
+            }
+        ]
+    }
+}
